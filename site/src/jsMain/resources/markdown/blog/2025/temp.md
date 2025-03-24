@@ -1,13 +1,10 @@
 ---
-root: .components.layouts.BlogLayout
+root: .blog.BlogLayout
 title: "Flutter Quill: An amazing rich text editor for Quill"
 description: My description
 date: 2025-01-02
 updated: 2025-01-06
 ---
-
-# Hello
-{{{ .components.widgets.HoverLink("#") }}}
 
 <p align="center" style="background-color:#282C34">
   <img src="https://user-images.githubusercontent.com/10923085/119221946-2de89000-baf2-11eb-8285-68168a78c658.png" width="600px" alt="Flutter Quill">
