@@ -8,13 +8,13 @@ root: .common.components.layouts.MarkdownLayout(title = "Resume")
 
 **Flutter Developer | Scalable Apps & Packages**
 
-Dedicated Flutter developer skilled in creating high-quality apps, packages, and platform-specific plugins.  
+Dedicated Flutter developer with a focus on building high-quality apps, packages, and platform-specific plugins.
 Focused on delivering fewer, well-executed features, emphasizing clean, maintainable, and tested code.  
 Committed to continuous improvement and collaborative progress.
 
 > [!NOTE]
-> You're viewing a very early version of the resume that does not reflect the final version.  
-> This was written quickly for demonstration purposes during development.
+> This resume is an early version created for development and demonstration purposes.  
+> It is actively maintained and will continue to evolve with clearer structure and additional detail over time.
 
 ---
 
@@ -68,6 +68,11 @@ Committed to continuous improvement and collaborative progress.
 - Added **Flutter/WASM support** ([#2293](https://github.com/singerdmx/flutter-quill/pull/2293))
 - Conducted **PR reviews** to maintain code quality and support community
   contributors ([#2415](https://github.com/singerdmx/flutter-quill/pull/2415))
+- Fixed bugs to improve stability and correctness (e.g., [#2522](https://github.com/singerdmx/flutter-quill/pull/2522), [#2279](https://github.com/singerdmx/flutter-quill/pull/2279))
+- Refactored confusing logic with full backward compatibility and added tests to ensure reliability ([example #2525](https://github.com/singerdmx/flutter-quill/pull/2525))
+- Filed bug issues with steps to reproduce (e.g., [Back Button issue](https://github.com/singerdmx/flutter-quill/issues/2527), [macOS missing keyboard actions](https://github.com/singerdmx/flutter-quill/issues/2288))
+- Filed feature requests with details (e.g., [Spell Checking](https://github.com/singerdmx/flutter-quill/issues/2246), [Replacing a discounted dependency](https://github.com/singerdmx/flutter-quill/issues/2290))
+- Removed a dependency that might cause issues with YouTube's terms of service ([#2286](https://github.com/singerdmx/flutter-quill/pull/2286))
 - Comprehensive
   contributions: [All PRs](https://github.com/singerdmx/flutter-quill/pulls?q=is%3Apr+author%3AEchoEllet) | [Commits](https://github.com/singerdmx/flutter-quill/commits/master/?author=EchoEllet)
 
@@ -101,6 +106,11 @@ unit testing
 - The PR was [closed](https://github.com/flutter/packages/pull/8079#issuecomment-2578911082) due to project priorities,
   but the work was recognized and maintainers encouraged publishing it as
   a [standalone package](https://pub.dev/packages/native_image_picker_macos)
+
+### **[Flutter BLoC](https://bloclibrary.dev/) | Guest Contributor**
+
+- Contributed the [“Modeling State” documentation page](https://bloclibrary.dev/modeling-state/) ([PR #4201](https://github.com/felangel/bloc/pull/4201))
+- Fixed pub.dev platform tags to accurately reflect supported platforms, which is a minor improvement ([PR #3993](https://github.com/felangel/bloc/pull/3993))
 
 ---
 
