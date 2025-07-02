@@ -8,104 +8,157 @@ root: .common.components.layouts.MarkdownLayout(title = "Resume")
 
 **Flutter Developer | Scalable Apps & Packages**
 
-Dedicated Flutter developer with a focus on clean, maintainable, and tested code.
-I build high-quality apps, packages, and platform-specific
-plugins with a commitment to simplicity and continuous improvement.
-I prioritize well-executed
-features over quantity and thrive in collaborative environments.
+Dedicated Flutter developer skilled in creating high-quality apps, packages, and platform-specific plugins.  
+Focused on delivering fewer, well-executed features, emphasizing clean, maintainable, and tested code.  
+Committed to continuous improvement and collaborative progress.
 
-> [!WARNING]
-> You're watching a very early of the resume that doesn't reflect the final version.
-> This was written quickly for demonstration while development.
-
-[Back to Homepage](./)
+> [!NOTE]
+> You're viewing a very early version of the resume that does not reflect the final version.  
+> This was written quickly for demonstration purposes during development.
 
 ---
 
 ## **Skills**
 
-- **Programming Languages**: Dart, Kotlin, Java, JavaScript, TypeScript, and Swift.
+- **Programming Languages**: Dart, Kotlin, Java, JavaScript, TypeScript, Swift
 - **Frameworks & Libraries**:
-    - **Cross Platform**: Flutter, Kotlin Multiplatform, Compose Multiplatform.
-    - **Android**: Native Android (Java/Kotlin), Jetpack Compose, XML (Views, UI).
-    - **Backend**: Ktor, Node.js, Express.js, and Deno.
-    - **Web**: Kobweb, and React.
-- **Testing & Quality**: Unit & Integration testing, and Continuous Integration.
-- **Version Control**: Git and GitHub.
+    - **Cross-Platform**: Flutter, Kotlin Multiplatform, Compose Multiplatform
+    - **Android**: Native Android (Java/Kotlin), Jetpack Compose, XML (Views, UI)
+    - **Backend**: Ktor, Node.js, Express.js
+    - **Web**: Kobweb, React
+- **Testing & Quality**: Unit & Integration Testing, Continuous Integration
+- **Version Control**: Git, GitHub
 - **Development Tools**:
-    - IDEs: IntelliJ Platform (IDEA and Android Studio), Visual Studio Code.
-    - Formats: Markdown, JSON, XML, HTML.
-- **Cloud & Services**: Firebase.
-- **Other**: Code reviews, Documentation, and Maintenance & Support.
-- **Soft Skills**: Team Collaboration, Communication, and Adaptability.
+    - IDEs: IntelliJ Platform (IDEA and Android Studio), Visual Studio Code
+    - Formats: Markdown, JSON, XML, HTML
+- **Cloud & Services**: Firebase
+- **Other**: Code Reviews, Documentation, Maintenance & Support
+- **Architecture**: Layered Architecture ([Example](https://github.com/KraftLauncher/kraft-launcher/blob/main/docs/ARCHITECTURE.md)), Clean Architecture
+- **Soft Skills**: Team Collaboration, Communication, Adaptability
+
+### **Flutter-Specific Skills**
+
+- **State Management**: [BLoC](https://pub.dev/packages/flutter_bloc),
+  [Provider](https://pub.dev/packages/provider), [Riverpod](https://pub.dev/packages/riverpod), [`InheritedWidget`](https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html)
+- **Flutter Plugin Development**: Writing plugins for platform-specific functionalities in a type-safe way
+  using [pigeon](https://pub.dev/packages/pigeon), with platform tests in addition to Dart tests
+- **Tooling**: Working with monorepos using [melos](https://pub.dev/packages/melos)
+- **Testing**: [mockito](https://pub.dev/packages/mockito),
+  [mocktail](https://pub.dev/packages/mocktail), [checks](https://pub.dev/packages/checks),
+  [matcher](https://pub.dev/packages/matcher)
 
 ---
 
 ## **Experience**
 
-### **Open-Source Contributor**
+### *[Flutter Quill](https://github.com/singerdmx/flutter-quill) Maintainer* | *Sep 2023 – Present*
 
-*[Flutter Quill](https://github.com/singerdmx/flutter-quill) Maintainer* | *Sep 2023 – Present*
-
-- Enhanced **image save functionality** with tests,
-  ensuring robust and reliable behavior ([#2403](https://github.com/singerdmx/flutter-quill/pull/2403)
-  and [quill-native-bridge#9](https://github.com/FlutterQuill/quill-native-bridge/pull/9)).
+- Enhanced **image save functionality** with tests, ensuring robust and reliable
+  behavior ([#2403](https://github.com/singerdmx/flutter-quill/pull/2403), [quill-native-bridge#9](https://github.com/FlutterQuill/quill-native-bridge/pull/9))
+- Developed [`quill_native_bridge`](https://pub.dev/packages/quill_native_bridge), a Flutter plugin for Flutter Quill to
+  access platform-specific functionalities
 - Resolved **common build failures** and introduced native clipboard functionality for rich text paste support,
-  eliminating the need for Rust installation
-  [#2230](https://github.com/singerdmx/flutter-quill/pull/2230),
-  [quill-native-bridge initial commit](https://github.com/FlutterQuill/quill-native-bridge/commit/3165de2b4e2c43b32cdf425c3b12ed62545ad030)
-  and [#2322](https://github.com/singerdmx/flutter-quill/pull/2322).
-- Addressed **critical bugs** by reverting unstable features, maintaining project stability and user and developer
-  experience [#2413](https://github.com/singerdmx/flutter-quill/pull/2413).
-- Published **v11 pre-release**, delivering significant improvements and resolving common issues without adding new
-  features (see [#2338](https://github.com/singerdmx/flutter-quill/pull/2338) for the initial pre-release).
-- Added **Flutter/WASM support** [#2293](https://github.com/singerdmx/flutter-quill/pull/2293).
-- Conducted **PR reviews** to maintain high code quality and guide community contributions (example
-  PR [#2415](https://github.com/singerdmx/flutter-quill/pull/2415)).
-- Comprehensive contributions: [All PRs](https://github.com/singerdmx/flutter-quill/pulls?q=is%3Apr+author%3AEchoEllet)
-  | [Commits](https://github.com/singerdmx/flutter-quill/commits/master/?author=EchoEllet).
+  eliminating the need for Rust
+  installation ([#2230](https://github.com/singerdmx/flutter-quill/pull/2230), [initial commit](https://github.com/FlutterQuill/quill-native-bridge/commit/3165de2b4e2c43b32cdf425c3b12ed62545ad030), [#2322](https://github.com/singerdmx/flutter-quill/pull/2322))
+- Addressed **critical bugs** by reverting unstable features to maintain project stability and ensure a smooth user and
+  developer experience ([#2413](https://github.com/singerdmx/flutter-quill/pull/2413))
+- Published the **v11 pre-release**, delivering major improvements and resolving common issues without introducing new
+  features ([#2338](https://github.com/singerdmx/flutter-quill/pull/2338))  
+  Added [migration guide](https://github.com/singerdmx/flutter-quill/blob/master/doc/migration/10_to_11.md)
+- Added **Flutter/WASM support** ([#2293](https://github.com/singerdmx/flutter-quill/pull/2293))
+- Conducted **PR reviews** to maintain code quality and support community
+  contributors ([#2415](https://github.com/singerdmx/flutter-quill/pull/2415))
+- Comprehensive
+  contributions: [All PRs](https://github.com/singerdmx/flutter-quill/pulls?q=is%3Apr+author%3AEchoEllet) | [Commits](https://github.com/singerdmx/flutter-quill/commits/master/?author=EchoEllet)
+
+### *[Kobweb](https://github.com/varabyte/kobweb) | Guest Contributor*
+
+Listed in the [Kobweb Guest Contributors](https://kobweb.varabyte.com/docs/community/contributors#guest-contributors)
+
+### *[Ktor Documentation](https://github.com/ktorio/ktor-documentation) | Guest Contributor*
+
+[Using ProGuard to minimize Ktor server applications](https://github.com/ktorio/ktor-documentation/pull/481/files)
+
+### *[macos_ui Flutter Package](https://pub.dev/packages/macos_ui) | Guest Contributor*
+
+[Support for Swift Package Manager](https://github.com/macosui/macos_window_utils.dart/pull/66)
+
+### *[serverpod Flutter Package](https://pub.dev/packages/serverpod_flutter) | Guest Contributor*
+
+[A minor refactoring to simplify implementation details](https://github.com/serverpod/serverpod/pull/3439/files) during
+unit testing
+
+### *[firebase_storage Flutter Package](https://pub.dev/packages/firebase_storage) | Guest Contributor*
+
+[Fixed a rare bug on Android](https://github.com/firebase/flutterfire/pull/12047)
+
+### **[Flutter ecosystem](https://github.com/flutter/packages) | Guest Contributor**
+
+- Implemented native image picking support for macOS as part of a broader effort to extend the `image_picker` plugin to
+  desktop platforms
+- Submitted [pull request #8079](https://github.com/flutter/packages/pull/8079) with full implementation, tests, and
+  documentation
+- The PR was [closed](https://github.com/flutter/packages/pull/8079#issuecomment-2578911082) due to project priorities,
+  but the work was recognized and maintainers encouraged publishing it as
+  a [standalone package](https://pub.dev/packages/native_image_picker_macos)
+
+---
 
 ## **Projects**
 
-### **[Flutter Quill](https://github.com/singerdmx/flutter-quill/) | Rich Text Editor**
+### **[Flutter Quill](https://github.com/singerdmx/flutter-quill/)** | Rich Text Editor
 
-A rich text editor component (WYSIWYG) for [Flutter](https://flutter.dev/)
-that uses the same JSON data format as [QuillJs](https://quilljs.com/).
+A rich text (WYSIWYG) editor library for [Flutter](https://flutter.dev/) using the same JSON format
+as [QuillJS](https://quilljs.com/)
 
-### **[Quill Native Bridge](https://pub.dev/packages/quill_native_bridge) | Flutter Plugin for Flutter Quill**
+### **[Kraft Launcher](https://github.com/KraftLauncher/kraft-launcher)** | Minecraft Launcher (WIP)
 
-A Flutter platform package for [`flutter_quill`](https://pub.dev/packages/flutter_quill)
-to access platform-specific APIs.
+An open-source Minecraft Java launcher focused on instance isolation, seamless sharing, and mod management.
 
-### **[Native macOS Flutter Image Picker implementation](https://github.com/CompileKernel/native-image-picker-macos)**
+Despite being in early stages, it's written to be maintainable, testable, and readable with  
+[a proper app architecture](https://github.com/KraftLauncher/kraft-launcher/blob/main/docs/ARCHITECTURE.md).  
+The first feature
+includes [a comprehensive test suite](https://github.com/KraftLauncher/kraft-launcher/tree/main/test/account/logic).
 
-A macOS platform implementation of [`image_picker`](https://pub.dev/packages/image_picker) using the native
-picker instead of the system open file dialog.
+### **[Quill Native Bridge](https://pub.dev/packages/quill_native_bridge)** | Flutter Plugin
 
-This feature was originally proposed as
-a [pull request to the Flutter ecosystem,](https://github.com/flutter/packages/pull/8079/)
-but it was later decided to split it into a community package.
+A platform package for [`flutter_quill`](https://pub.dev/packages/flutter_quill) to access native APIs
 
-### **[Kraft Sync](https://github.com/FreshKernel/kraft-sync/) | Video Game Script**
+### **[Native macOS Flutter Image Picker](https://github.com/CompileKernel/native-image-picker-macos)**
 
-An automated script to synchronize mods, resource packs, and server lists for Minecraft players upon launch.
-It supports various launchers and includes an admin utility app for seamless management.
+A native macOS implementation of [`image_picker`](https://pub.dev/packages/image_picker), using the native image picker
+instead of the open file dialog
 
-Developed in [Kotlin/JVM](https://kotlinlang.org/docs/jvm-get-started.html) and minimized
-using [Proguard](https://github.com/Guardsquare/proguard) to ensure a compact bundle size.
+Originally submitted to the Flutter ecosystem  
+([pull request](https://github.com/flutter/packages/pull/8079)), later split into a community package
+
+### **[Gym App Prototype](https://github.com/EchoEllet/gym-app-prototype)** | App for Gym Members
+
+An MVP combining [Kobweb](https://github.com/varabyte/kobweb), [Ktor](https://ktor.io/),
+and [Flutter](https://flutter.dev/)
+
+[Download the Flutter admin app](https://drive.google.com/file/d/1SntZE2yHYe4HgFEWOmR1h-wwg33FATd4/view?usp=sharing)
+
+[View the app as a gym client](https://freshkernel.dev/login?userId=67fc361c40388d1ee512fdff&loginToken=SzkZ1VLkZwbvBIOcYuSEGNHwVGjV1VjPhYODIwETik8)
+
+### **[Kraft Sync](https://github.com/FreshKernel/kraft-sync/)** | Minecraft Script
+
+Automates mod/resource pack/server sync upon game launch.  
+Includes an admin utility app for management.  
+Written in [Kotlin/JVM](https://kotlinlang.org/docs/jvm-get-started.html) and optimized
+with [ProGuard](https://github.com/Guardsquare/proguard)
 
 ### **[Alrayada Web](https://github.com/FreshKernel/alrayada-web)**
 
-A production website for a company using [Kobweb](https://github.com/varabyte/kobweb).
+A production website for a company using [Kobweb](https://github.com/varabyte/kobweb)
 
 ### **[Firebase App Check for Ktor Server](https://github.com/FreshKernel/ktor-server-firebase-app-check)**
 
-A [Ktor](https://ktor.io/) server plugin for using [Firebase App Check](https://firebase.google.com/docs/app-check).
+A [Ktor](https://ktor.io/) server plugin to support [Firebase App Check](https://firebase.google.com/docs/app-check)
 
 ---
 
 ## **Contact**
 
 - **GitHub**: [github.com/EchoEllet](https://github.com/EchoEllet)
-- **LinkedIn**: [linkedin.com/in/username](https://linkedin.com/in/username)
 - **Email**: [echo.ellet@gmail.com](mailto:echo.ellet@gmail.com)
