@@ -99,13 +99,14 @@ unit testing
 
 ### **[Flutter ecosystem](https://github.com/flutter/packages) | Guest Contributor**
 
-- Implemented native image picking support for macOS as part of a broader effort to extend the `image_picker` plugin to
-  desktop platforms
-- Submitted [pull request #8079](https://github.com/flutter/packages/pull/8079) with full implementation, tests, and
-  documentation
-- The PR was [closed](https://github.com/flutter/packages/pull/8079#issuecomment-2578911082) due to project priorities,
-  but the work was recognized and maintainers encouraged publishing it as
-  a [standalone package](https://pub.dev/packages/native_image_picker_macos)
+Implemented native image picking support for macOS as part of a broader effort to 
+extend the `image_picker` plugin to desktop platforms:
+
+  - Submitted [PR #8079](https://github.com/flutter/packages/pull/8079) with full implementation, tests, and
+    documentation
+  - The PR was [closed](https://github.com/flutter/packages/pull/8079#issuecomment-2578911082) due to project priorities,
+    but the work was recognized and maintainers encouraged publishing it as
+    a [standalone package](https://pub.dev/packages/native_image_picker_macos)
 
 ### **[Flutter BLoC](https://bloclibrary.dev/) | Guest Contributor**
 
