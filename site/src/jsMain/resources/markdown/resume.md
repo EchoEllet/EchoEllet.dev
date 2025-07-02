@@ -8,8 +8,8 @@ root: .common.components.layouts.MarkdownLayout(title = "Resume")
 
 **Flutter Developer | Scalable Apps & Packages**
 
-Dedicated Flutter developer with a focus on building high-quality apps, packages, and platform-specific plugins.
-Focused on delivering fewer, well-executed features, emphasizing clean, maintainable, and tested code.  
+Dedicated Flutter developer skilled in creating high-quality apps, packages, and platform-specific plugins.
+Focused on delivering fewer, **well-executed** features, emphasizing clean, maintainable, and **tested code**.
 Committed to continuous improvement and collaborative progress.
 
 > [!NOTE]
