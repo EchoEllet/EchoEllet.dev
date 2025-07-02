@@ -14,8 +14,8 @@ import com.varabyte.kobweb.compose.ui.modifiers.alignSelf
 import com.varabyte.kobweb.compose.ui.modifiers.display
 import com.varabyte.kobweb.compose.ui.modifiers.flexWrap
 import com.varabyte.kobweb.compose.ui.modifiers.margin
+import com.varabyte.kobweb.core.AppGlobals
 import com.varabyte.kobweb.core.isExporting
-import com.varabyte.kobweb.core.rememberPageContext
 import kotlinx.coroutines.delay
 import org.jetbrains.compose.web.css.AlignItems
 import org.jetbrains.compose.web.css.AlignSelf
@@ -34,11 +34,11 @@ fun TypingTextAnimation(
     onTypingFinished: () -> Unit = {},
     content: @Composable (currentText: String) -> Unit = { Text(it) },
 ) {
-    // For improved SEO, ensure the static HTML contains the initial text without modification during export.
+    // For improved SEO, ensure the exported HTML contains the full text (disable the typing animation).
     var currentText by remember { mutableStateOf(fullText) }
 
-    val ctx = rememberPageContext()
-    if (!ctx.isExporting) {
+    // Avoid applying the animation while exporting.
+    if (!AppGlobals.isExporting) {
         LaunchedEffect(fullText, isTypingForward) {
 
             currentText = if (isTypingForward) "" else fullText // Starting text
