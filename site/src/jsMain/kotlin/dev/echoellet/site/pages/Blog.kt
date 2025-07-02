@@ -12,8 +12,11 @@ import dev.echoellet.site.common.components.layouts.PageLayout
 fun BlogPage() {
     // TODO: Complete, also update values if needed
     PageLayout("Blog") {
+        val blogPosts = BlogPosts.values
         Column {
-            BlogPosts.values.forEach { BlogPostCard(it) }
+            blogPosts.forEach {
+                BlogPostCard(it)
+            }
         }
     }
 }

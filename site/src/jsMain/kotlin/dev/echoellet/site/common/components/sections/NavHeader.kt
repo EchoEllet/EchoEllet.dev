@@ -110,7 +110,7 @@ private fun MenuItems() {
     // TODO: Avoid hardcoding links everywhere?
     NavLink("/", "Home")
     NavLink("/resume", "Resume")
-    NavLink("/#contact", "Contact")
+    NavLink("mailto:${ProjectInfo.CONTACT_EMAIL}", "Contact")
     NavLink("/blog", "Blog")
 }
 
