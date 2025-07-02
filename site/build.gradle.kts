@@ -102,6 +102,11 @@ fun MarkdownBlock.generateBlogPostsDataFromMarkdownDirectory() {
     val rootPackage = project.group as String
     val logger = logger
 
+    // TODO: Include the generated file BlogPosts.kt in build directory?
+    // TODO: Find a better way to reference the file.
+    val blogPackage = "${rootPackage}.blog"
+    val blogPostsKotlinFile = project.file("./src/jsMain/kotlin/${blogPackage.replace('.', '/')}/BlogPosts.kt")
+
     process.set { markdownEntries ->
         val requiredFields = listOf("title", "description", "date")
 
@@ -142,10 +147,6 @@ fun MarkdownBlock.generateBlogPostsDataFromMarkdownDirectory() {
                 )
             }.sortedByDescending { it.date }
 
-        // TODO: Include the generated file BlogPosts.kt in build directory?
-        // TODO: Find a better way to reference the file.
-        val blogPackage = "${rootPackage}.blog"
-        val blogPostsKotlinFile = File("./site/src/jsMain/kotlin/${blogPackage.replace('.', '/')}/BlogPosts.kt")
         val blogPostsFileExists = blogPostsKotlinFile.exists()
         if (!blogPostsFileExists) {
             throw GradleException(
