@@ -63,7 +63,11 @@ fun PageLayout(title: String, description: String? = null, content: @Composable 
     }
 
     BackToTopButton()
+    SourceCodeComment()
+}
 
+@Composable
+private fun SourceCodeComment() {
     LaunchedEffect(Unit) {
         val message =
             " This HTML file is generated, for the project source code, refer to: ${ProjectInfo.REPOSITORY_URL} "

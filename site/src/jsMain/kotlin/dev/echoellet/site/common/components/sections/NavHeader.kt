@@ -169,7 +169,7 @@ fun NavHeader() {
                     .letterSpacing(2.px)
                     .backgroundImage(
                         // TODO: Brand color is hardcoded, consider adjusting it for dark mode too
-                        linearGradient(90.deg, Color.rgb(0x0066CC), Color.rgb(0x5c93ff))
+                        linearGradient(Color.rgb(0x0066CC), Color.rgb(0x5c93ff), 90.deg)
                     )
                     .backgroundClip(BackgroundClip.Text)
                     .styleModifier { property("-webkit-text-fill-color", "transparent") },
