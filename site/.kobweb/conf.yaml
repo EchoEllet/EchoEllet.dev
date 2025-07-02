@@ -1,7 +1,7 @@
 site:
   title: "EchoEllet"
   # Set base path to use GitHub pages. See: https://bitspittle.dev/blog/2022/static-deploy#base-path
-  basePath: "EchoEllet.dev"
+  basePath: "EchoEllet"
 
 server:
   files:
