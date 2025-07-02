@@ -34,6 +34,9 @@ val PageContentStyle = CssStyle {
     Breakpoint.MD { Modifier.maxWidth(60.cssRem) }
 }
 
+// NOTE: It's possible to use Kobweb @Layout to make using this layout a bit nicer:
+// https://kobweb.varabyte.com/docs/concepts/foundation/layouts#layout.
+
 @Composable
 fun PageLayout(title: String, description: String? = null, content: @Composable ColumnScope.() -> Unit) {
     LaunchedEffect(title) {
