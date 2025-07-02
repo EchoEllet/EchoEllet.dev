@@ -3,6 +3,8 @@ package dev.echoellet.site
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import com.varabyte.kobweb.compose.css.ScrollBehavior
+import com.varabyte.kobweb.compose.foundation.layout.Box
+import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.modifiers.minHeight
 import com.varabyte.kobweb.compose.ui.modifiers.scrollBehavior
 import com.varabyte.kobweb.core.App
@@ -59,10 +61,11 @@ fun AppEntry(content: @Composable () -> Unit) {
 
         Surface(
             SmoothColorStyle.toModifier()
-                .minHeight(100.vh)
                 .scrollBehavior(ScrollBehavior.Smooth)
         ) {
-            content()
+            Box(Modifier.minHeight(100.vh)) {
+                content()
+            }
         }
     }
 }
