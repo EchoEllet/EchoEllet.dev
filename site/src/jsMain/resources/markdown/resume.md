@@ -113,6 +113,10 @@ extend the `image_picker` plugin to desktop platforms:
 - Contributed the [“Modeling State” documentation page](https://bloclibrary.dev/modeling-state/) ([PR #4201](https://github.com/felangel/bloc/pull/4201))
 - Fixed pub.dev platform tags to accurately reflect supported platforms, which is a minor improvement ([PR #3993](https://github.com/felangel/bloc/pull/3993))
 
+### **[ATLauncher](https://github.com/ATLauncher/ATLauncher) | Guest Contributor**
+
+Added a new feature ([#893](https://github.com/ATLauncher/ATLauncher/pull/893))
+
 ---
 
 ## **Projects**
