@@ -13,8 +13,8 @@ Focused on delivering fewer, **well-executed** features, emphasizing clean, main
 Committed to continuous improvement and collaborative progress.
 
 > [!NOTE]
-> This resume is an early version created for development and demonstration purposes.  
-> It is actively maintained and will continue to evolve with clearer structure and additional detail over time.
+> This resume is actively maintained and regularly updated to reflect ongoing improvements and contributions.
+Expect continued refinement in structure, clarity, and detail over time.
 
 ---
 
@@ -76,44 +76,48 @@ Committed to continuous improvement and collaborative progress.
 - Comprehensive
   contributions: [All PRs](https://github.com/singerdmx/flutter-quill/pulls?q=is%3Apr+author%3AEchoEllet) | [Commits](https://github.com/singerdmx/flutter-quill/commits/master/?author=EchoEllet)
 
-### *[Kobweb](https://github.com/varabyte/kobweb) | Guest Contributor*
+---
 
-Listed in the [Kobweb Guest Contributors](https://kobweb.varabyte.com/docs/community/contributors#guest-contributors)
+## **Guest Contributions / Activities**
 
-### *[Ktor Documentation](https://github.com/ktorio/ktor-documentation) | Guest Contributor*
+### **[Flutter](https://github.com/flutter/packages)**
 
-[Using ProGuard to minimize Ktor server applications](https://github.com/ktorio/ktor-documentation/pull/481/files)
+Implemented native image picking support for macOS as part of a broader effort to
+extend the `image_picker` plugin to desktop platforms:
 
-### *[macos_ui Flutter Package](https://pub.dev/packages/macos_ui) | Guest Contributor*
+- Submitted [PR #8079](https://github.com/flutter/packages/pull/8079) with full implementation, tests, and
+  documentation
+- The PR was [closed](https://github.com/flutter/packages/pull/8079#issuecomment-2578911082) due to project priorities,
+  but the work was recognized and maintainers encouraged publishing it as
+  a [standalone package](https://pub.dev/packages/native_image_picker_macos)
+
+### *[macos_ui Flutter Package](https://pub.dev/packages/macos_ui)*
 
 [Support for Swift Package Manager](https://github.com/macosui/macos_window_utils.dart/pull/66)
 
-### *[serverpod Flutter Package](https://pub.dev/packages/serverpod_flutter) | Guest Contributor*
+### *[serverpod Flutter Package](https://pub.dev/packages/serverpod_flutter)*
 
 [A minor refactoring to simplify implementation details](https://github.com/serverpod/serverpod/pull/3439/files) during
 unit testing
 
-### *[firebase_storage Flutter Package](https://pub.dev/packages/firebase_storage) | Guest Contributor*
+### *[firebase_storage Flutter Package](https://pub.dev/packages/firebase_storage)*
 
 [Fixed a rare bug on Android](https://github.com/firebase/flutterfire/pull/12047)
 
-### **[Flutter ecosystem](https://github.com/flutter/packages) | Guest Contributor**
-
-Implemented native image picking support for macOS as part of a broader effort to 
-extend the `image_picker` plugin to desktop platforms:
-
-  - Submitted [PR #8079](https://github.com/flutter/packages/pull/8079) with full implementation, tests, and
-    documentation
-  - The PR was [closed](https://github.com/flutter/packages/pull/8079#issuecomment-2578911082) due to project priorities,
-    but the work was recognized and maintainers encouraged publishing it as
-    a [standalone package](https://pub.dev/packages/native_image_picker_macos)
-
-### **[Flutter BLoC](https://bloclibrary.dev/) | Guest Contributor**
+### **[Flutter BLoC](https://bloclibrary.dev/)**
 
 - Contributed the [“Modeling State” documentation page](https://bloclibrary.dev/modeling-state/) ([PR #4201](https://github.com/felangel/bloc/pull/4201))
 - Fixed pub.dev platform tags to accurately reflect supported platforms, which is a minor improvement ([PR #3993](https://github.com/felangel/bloc/pull/3993))
 
-### **[ATLauncher](https://github.com/ATLauncher/ATLauncher) | Guest Contributor**
+### *[Kobweb](https://github.com/varabyte/kobweb)*
+
+Listed in the [Kobweb Guest Contributors](https://kobweb.varabyte.com/docs/community/contributors#guest-contributors)
+
+### *[Ktor Documentation](https://github.com/ktorio/ktor-documentation)*
+
+[Using ProGuard to minimize Ktor server applications](https://github.com/ktorio/ktor-documentation/pull/481/files)
+
+### **[ATLauncher](https://github.com/ATLauncher/ATLauncher)**
 
 Added a new feature ([#893](https://github.com/ATLauncher/ATLauncher/pull/893))
 
@@ -121,12 +125,12 @@ Added a new feature ([#893](https://github.com/ATLauncher/ATLauncher/pull/893))
 
 ## **Projects**
 
-### **[Flutter Quill](https://github.com/singerdmx/flutter-quill/)** | Rich Text Editor
+### **[Flutter Quill](https://github.com/singerdmx/flutter-quill/)** · Rich Text Editor for Flutter · ⭐ [2.8k](https://github.com/singerdmx/flutter-quill) · 📦 [146K+ Downloads](https://pub.dev/packages/flutter_quill)
 
-A rich text (WYSIWYG) editor library for [Flutter](https://flutter.dev/) using the same JSON format
-as [QuillJS](https://quilljs.com/)
+A powerful WYSIWYG editor for Flutter, built with the same JSON document format as [QuillJS](https://quilljs.com/).  
+Supports rich text editing across mobile, desktop, and web platforms with customizable UI and platform integration capabilities.
 
-### **[Kraft Launcher](https://github.com/KraftLauncher/kraft-launcher)** | Minecraft Launcher (WIP)
+### **[Kraft Launcher](https://github.com/KraftLauncher/kraft-launcher)** | Minecraft Launcher
 
 An open-source Minecraft Java launcher focused on instance isolation, seamless sharing, and mod management.
 
@@ -135,19 +139,21 @@ Despite being in early stages, it's written to be maintainable, testable, and re
 The first feature
 includes [a comprehensive test suite](https://github.com/KraftLauncher/kraft-launcher/tree/main/test/account/logic).
 
-### **[Quill Native Bridge](https://pub.dev/packages/quill_native_bridge)** | Flutter Plugin
-
-A platform package for [`flutter_quill`](https://pub.dev/packages/flutter_quill) to access native APIs
-
 ### **[Native macOS Flutter Image Picker](https://github.com/CompileKernel/native-image-picker-macos)**
 
 A native macOS implementation of [`image_picker`](https://pub.dev/packages/image_picker), using the native image picker
 instead of the open file dialog
 
+### **[Quill Native Bridge](https://pub.dev/packages/quill_native_bridge)** | Flutter Plugin
+
+A platform package for [`flutter_quill`](https://pub.dev/packages/flutter_quill) to access native APIs
+
 Originally submitted to the Flutter ecosystem  
 ([pull request](https://github.com/flutter/packages/pull/8079)), later split into a community package
 
-### **[Gym App Prototype](https://github.com/EchoEllet/gym-app-prototype)** | App for Gym Members
+## **Side Projects**
+
+### **[Gym App MVP](https://github.com/EchoEllet/gym-app-prototype)** | App for Gym Members
 
 An MVP combining [Kobweb](https://github.com/varabyte/kobweb), [Ktor](https://ktor.io/),
 and [Flutter](https://flutter.dev/)
