@@ -131,7 +131,7 @@ Listed in the [Kobweb Guest Contributors](https://kobweb.varabyte.com/docs/commu
 
 ### **[ATLauncher](https://github.com/ATLauncher/ATLauncher)**
 
-Added a new feature ([#893](https://github.com/ATLauncher/ATLauncher/pull/893))
+Quick play feature to join a Minecraft server, world, and realm on game launch ([#893](https://github.com/ATLauncher/ATLauncher/pull/893))
 
 ---
 
