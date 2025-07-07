@@ -39,7 +39,8 @@ Dart, Kotlin, Java, JavaScript, TypeScript, Swift
 
 ### Version Control & Collaboration
 
-- Git and GitHub workflows, code reviews, documentation maintenance
+- Version Control: Git and GitHub
+- Collaboration: Code reviews, documentation and maintenance
 
 ### Development Tools & Formats
 
@@ -52,7 +53,10 @@ Dart, Kotlin, Java, JavaScript, TypeScript, Swift
 
 ### Software Architecture
 
-- Layered and Clean Architecture for scalable, maintainable apps
+- Experience with Layered and Clean Architecture for building scalable and maintainable applications
+- Familiar with MVVM pattern for clear separation of concerns
+- Knowledgeable about common design patterns such as Singleton, Factory, Repository, Dependency Injection, Command and
+  Result
 
 ### Soft Skills
 
