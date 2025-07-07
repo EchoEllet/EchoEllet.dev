@@ -18,34 +18,45 @@ Expect continued refinement in structure, clarity, and detail over time.
 
 ---
 
-## **Skills**
+## Skills
 
-- **Programming Languages**: Dart, Kotlin, Java, JavaScript, TypeScript, Swift
-- **Frameworks & Libraries**:
-    - **Cross-Platform**: Flutter, Kotlin Multiplatform, Compose Multiplatform
-    - **Android**: Native Android (Java/Kotlin), Jetpack Compose, XML (Views, UI)
-    - **Backend**: Ktor, Node.js, Express.js
-    - **Web**: Kobweb, React
-- **Testing & Quality**: Unit & Integration Testing, Continuous Integration
-- **Version Control**: Git, GitHub
-- **Development Tools**:
-    - IDEs: IntelliJ Platform (IDEA and Android Studio), Visual Studio Code
-    - Formats: Markdown, JSON, XML, HTML
-- **Cloud & Services**: Firebase
-- **Other**: Code Reviews, Documentation, Maintenance & Support
-- **Architecture**: Layered Architecture ([Example](https://github.com/KraftLauncher/kraft-launcher/blob/main/docs/ARCHITECTURE.md)), Clean Architecture
-- **Soft Skills**: Team Collaboration, Communication, Adaptability
+### Programming Languages
 
-### **Flutter-Specific Skills**
+Dart, Kotlin, Java, JavaScript, TypeScript, Swift
 
-- **State Management**: [BLoC](https://pub.dev/packages/flutter_bloc),
-  [Provider](https://pub.dev/packages/provider), [Riverpod](https://pub.dev/packages/riverpod), [`InheritedWidget`](https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html)
-- **Flutter Plugin Development**: Writing plugins for platform-specific functionalities in a type-safe way
-  using [pigeon](https://pub.dev/packages/pigeon), with platform tests in addition to Dart tests
-- **Tooling**: Working with monorepos using [melos](https://pub.dev/packages/melos)
-- **Testing**: [mockito](https://pub.dev/packages/mockito),
-  [mocktail](https://pub.dev/packages/mocktail), [checks](https://pub.dev/packages/checks),
-  [matcher](https://pub.dev/packages/matcher)
+### Frameworks & Platforms
+
+- Cross-Platform: Flutter, Kotlin Multiplatform, Compose Multiplatform
+- Android: Native development (Java/Kotlin), Jetpack Compose, XML-based UI
+- Backend: Ktor, Node.js, Express.js
+- Web: React, Kobweb
+
+### Testing & Quality Assurance
+
+- Unit and integration testing with mocking and stubbing dependencies
+- End-to-end (E2E) testing to verify complete user workflows
+- Continuous integration pipelines for reliable delivery
+
+### Version Control & Collaboration
+
+- Git and GitHub workflows, code reviews, documentation maintenance
+
+### Development Tools & Formats
+
+- IDEs: IntelliJ IDEA, Android Studio, VS Code
+- Data formats: Markdown, JSON, XML, HTML
+
+### Cloud & Services
+
+- Firebase: Authentication, Firestore, Cloud Functions, Storage
+
+### Software Architecture
+
+- Layered and Clean Architecture for scalable, maintainable apps
+
+### Soft Skills
+
+- Team collaboration, communication, adaptability
 
 ---
 
@@ -83,7 +94,7 @@ Expect continued refinement in structure, clarity, and detail over time.
 ### **[Flutter](https://github.com/flutter/packages)**
 
 Implemented native image picking support for macOS as part of a broader effort to
-extend the `image_picker` plugin to desktop platforms:
+extend the [`image_picker`](http://pub.dev/packages/image_picker) plugin to desktop platforms:
 
 - Submitted [PR #8079](https://github.com/flutter/packages/pull/8079) with full implementation, tests, and
   documentation
@@ -91,19 +102,19 @@ extend the `image_picker` plugin to desktop platforms:
   but the work was recognized and maintainers encouraged publishing it as
   a [standalone package](https://pub.dev/packages/native_image_picker_macos)
 
-### *[macos_ui Flutter Package](https://pub.dev/packages/macos_ui)*
-
-[Support for Swift Package Manager](https://github.com/macosui/macos_window_utils.dart/pull/66)
-
 ### *[firebase_storage Flutter Package](https://pub.dev/packages/firebase_storage)*
 
-[Fixed a rare bug on Android](https://github.com/firebase/flutterfire/pull/12047) with 
-[unit tests and code cleanup](https://github.com/firebase/flutterfire/pull/17484).
+[Fixed a rare bug on Android](https://github.com/firebase/flutterfire/pull/12047) with
+[unit tests and code cleanup](https://github.com/firebase/flutterfire/pull/17484)
 
 ### **[Flutter BLoC](https://bloclibrary.dev/)**
 
 - Contributed the [“Modeling State” documentation page](https://bloclibrary.dev/modeling-state/) ([PR #4201](https://github.com/felangel/bloc/pull/4201))
 - Fixed pub.dev platform tags to accurately reflect supported platforms, which is a minor improvement ([PR #3993](https://github.com/felangel/bloc/pull/3993))
+
+### *[macos_ui Flutter Package](https://pub.dev/packages/macos_ui)*
+
+[Support for Swift Package Manager](https://github.com/macosui/macos_window_utils.dart/pull/66)
 
 ### *[serverpod Flutter Package](https://pub.dev/packages/serverpod_flutter)*
 
