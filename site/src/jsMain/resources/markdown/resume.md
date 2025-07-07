@@ -95,19 +95,20 @@ extend the `image_picker` plugin to desktop platforms:
 
 [Support for Swift Package Manager](https://github.com/macosui/macos_window_utils.dart/pull/66)
 
-### *[serverpod Flutter Package](https://pub.dev/packages/serverpod_flutter)*
-
-[A minor refactoring to simplify implementation details](https://github.com/serverpod/serverpod/pull/3439/files) during
-unit testing
-
 ### *[firebase_storage Flutter Package](https://pub.dev/packages/firebase_storage)*
 
-[Fixed a rare bug on Android](https://github.com/firebase/flutterfire/pull/12047)
+[Fixed a rare bug on Android](https://github.com/firebase/flutterfire/pull/12047) with 
+[unit tests and code cleanup](https://github.com/firebase/flutterfire/pull/17484).
 
 ### **[Flutter BLoC](https://bloclibrary.dev/)**
 
 - Contributed the [“Modeling State” documentation page](https://bloclibrary.dev/modeling-state/) ([PR #4201](https://github.com/felangel/bloc/pull/4201))
 - Fixed pub.dev platform tags to accurately reflect supported platforms, which is a minor improvement ([PR #3993](https://github.com/felangel/bloc/pull/3993))
+
+### *[serverpod Flutter Package](https://pub.dev/packages/serverpod_flutter)*
+
+[A minor refactoring to simplify implementation details](https://github.com/serverpod/serverpod/pull/3439/files) while
+unit testing
 
 ### *[Kobweb](https://github.com/varabyte/kobweb)*
 
@@ -130,19 +131,18 @@ Added a new feature ([#893](https://github.com/ATLauncher/ATLauncher/pull/893))
 A powerful WYSIWYG editor for Flutter, built with the same JSON document format as [QuillJS](https://quilljs.com/).  
 Supports rich text editing across mobile, desktop, and web platforms with customizable UI and platform integration capabilities.
 
-### **[Kraft Launcher](https://github.com/KraftLauncher/kraft-launcher)** | Minecraft Launcher
-
-An open-source Minecraft Java launcher focused on instance isolation, seamless sharing, and mod management.
-
-Despite being in early stages, it's written to be maintainable, testable, and readable with  
-[a proper app architecture](https://github.com/KraftLauncher/kraft-launcher/blob/main/docs/ARCHITECTURE.md).  
-The first feature
-includes [a comprehensive test suite](https://github.com/KraftLauncher/kraft-launcher/tree/main/test/account/logic).
-
 ### **[Native macOS Flutter Image Picker](https://github.com/CompileKernel/native-image-picker-macos)**
 
 A native macOS implementation of [`image_picker`](https://pub.dev/packages/image_picker), using the native image picker
 instead of the open file dialog
+
+### **[Kraft Launcher](https://github.com/KraftLauncher/kraft-launcher)** | Minecraft Launcher
+
+An open-source Minecraft Java launcher focused on instance isolation, seamless sharing, and mod management.
+
+Actively developed with a strong focus on maintainability, testability, and clean architecture,  
+backed by a [documented app structure](https://github.com/KraftLauncher/kraft-launcher/blob/main/docs/ARCHITECTURE.md) and  
+[a comprehensive test suite](https://github.com/KraftLauncher/kraft-launcher/tree/main/test/account/logic) for core features.
 
 ### **[Quill Native Bridge](https://pub.dev/packages/quill_native_bridge)** | Flutter Plugin
 
