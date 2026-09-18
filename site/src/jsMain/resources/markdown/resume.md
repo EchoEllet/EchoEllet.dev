@@ -6,13 +6,13 @@ root: .common.components.layouts.MarkdownLayout(title = "Resume")
 
 # **Ellet**
 
-**Flutter Developer | Scalable Apps & Packages**
+**Software engineer | Flutter Developer & Open Source Contributor**
 
-Dedicated Flutter developer skilled in creating high-quality apps, packages, and platform-specific plugins.
-Focused on delivering fewer, **well-executed** features, emphasizing clean, maintainable, and **tested code**.
-Committed to continuous improvement and collaborative progress.
+Software engineer focused on creating well-executed software. Prefer delivering fewer but well-developed features
+(clean, documented, readable, maintainable, and tested code) over a larger number of less polished ones. Experienced in
+developing and maintaining Flutter applications, libraries, and open-source projects.
 
-> [!NOTE]
+> [!TIP]
 > This resume is actively maintained and regularly updated to reflect ongoing improvements and contributions.
 Expect continued refinement in structure, clarity, and detail over time.
 
@@ -66,7 +66,7 @@ Dart, Kotlin, Java, JavaScript, TypeScript, Swift
 
 ## **Experience**
 
-### *[Flutter Quill](https://github.com/singerdmx/flutter-quill) Maintainer* | *Sep 2023 – Present*
+### *[Flutter Quill](https://github.com/singerdmx/flutter-quill) Maintainer* | *Sep 2023 – Jul 2025*
 
 - Enhanced **image save functionality** with tests, ensuring robust and reliable
   behavior ([#2403](https://github.com/singerdmx/flutter-quill/pull/2403), [quill-native-bridge#9](https://github.com/FlutterQuill/quill-native-bridge/pull/9))
@@ -97,14 +97,49 @@ Dart, Kotlin, Java, JavaScript, TypeScript, Swift
 
 ### **[Flutter](https://github.com/flutter/packages)**
 
-Implemented native image picking support for macOS as part of a broader effort to
-extend the [`image_picker`](http://pub.dev/packages/image_picker) plugin to desktop platforms:
-
-- Submitted [PR #8079](https://github.com/flutter/packages/pull/8079) with full implementation, tests, and
+- Implemented native image picking support for macOS as part of a broader effort to
+  extend the [`image_picker`](http://pub.dev/packages/image_picker) plugin to desktop platforms. Submitted [PR #8079](https://github.com/flutter/packages/pull/8079) with full implementation, tests, and
   documentation
-- The PR was [closed](https://github.com/flutter/packages/pull/8079#issuecomment-2578911082) due to project priorities,
-  but the work was recognized and maintainers encouraged publishing it as
-  a [standalone package](https://pub.dev/packages/native_image_picker_macos)
+  - The PR was [closed](https://github.com/flutter/packages/pull/8079#issuecomment-2578911082) due to project priorities,
+    but the work was recognized and maintainers encouraged publishing it as
+    a [standalone package](https://pub.dev/packages/native_image_picker_macos)
+- Submitted a [detailed issue report](https://github.com/flutter/flutter/issues/174205)
+  with reproduction steps, investigation, and supporting evidence. Report [acknowledged](https://github.com/flutter/flutter/issues/174205#issuecomment-3213572807) by a Flutter maintainer as
+  detailed and reproducible.
+
+### **[flutter_secure_storage Flutter package](https://pub.dev/packages/flutter_secure_storage)**
+
+- Developed [
+  `flutter_secure_storage_linux_secret_service`](https://pub.dev/packages/flutter_secure_storage_linux_secret_service),
+  a pure-Dart Linux implementation that communicates directly with the standard Secret Service API over D-Bus.
+  - Maintains interoperability with existing secrets without requiring code changes to consuming apps or packages.
+  - Removes the need for Flutter method channels, C++/GObject, and native system libraries (`libsecret`,
+    `libjsoncpp`), reducing integration complexity.
+  - Developed [`freedesktop_secret`](https://pub.dev/packages/freedesktop_secret), a decoupled Dart client
+    for the Secret Service API used by this package. This lower-level package can be used independently of
+    `flutter_secure_storage` ([example](https://github.com/Skyost/SimpleSecureStorage/pull/15)).
+    More details in [this GitHub discussion](https://github.com/EchoEllet/dart-packages/discussions/3).
+  - Originally developed as a complete rewrite of `flutter_secure_storage_linux`
+    in [#1182](https://github.com/juliansteenbakker/flutter_secure_storage/pull/1182). The PR was not merged
+    ([reason](https://github.com/juliansteenbakker/flutter_secure_storage/issues/1203#issuecomment-5624556469)), but
+    the implementation
+    was [recognized](https://github.com/juliansteenbakker/flutter_secure_storage/pull/1182#issuecomment-5043235409) by
+    the maintainer as "pretty solid".
+  - The package was [referenced](https://pub.dev/packages/flutter_secure_storage#alternative-implementations) in the
+    `flutter_secure_storage` README under the "Alternative implementations" section.
+  - Identified and reported a historical upstream bug in the Linux implementation
+    in [#1181](https://github.com/juliansteenbakker/flutter_secure_storage/issues/1181).
+- Developed [`flutter_secure_storage_linux_portal`](https://pub.dev/packages/flutter_secure_storage_linux_portal): a
+  pure-Dart Linux implementation that uses the Secret Portal API to obtain a master secret and encrypts the secrets in a
+  local file. Suitable for sandboxed environments (Flatpak/Snap).
+  - Developed [`xdg_secret_portal_store`](https://pub.dev/packages/xdg_secret_portal_store), a decoupled Dart helper
+    library used by this package. This lower-level package can be used independently of
+    `flutter_secure_storage` ([example](https://github.com/Skyost/SimpleSecureStorage/pull/17)).
+  - The package was [referenced](https://pub.dev/packages/flutter_secure_storage#alternative-implementations) in the
+    `flutter_secure_storage` README under the "Alternative implementations" section.
+- Improved the original Linux README documentation:
+  [#1275](https://github.com/juliansteenbakker/flutter_secure_storage/pull/1275)
+  and [#1141](https://github.com/juliansteenbakker/flutter_secure_storage/pull/1141).
 
 ### *[firebase_storage Flutter Package](https://pub.dev/packages/firebase_storage)*
 
@@ -122,8 +157,12 @@ extend the [`image_picker`](http://pub.dev/packages/image_picker) plugin to desk
 
 ### *[serverpod Flutter Package](https://pub.dev/packages/serverpod_flutter)*
 
-[A minor refactoring to simplify implementation details](https://github.com/serverpod/serverpod/pull/3439/files) while
-unit testing
+- Submitted a [detailed issue report](https://github.com/serverpod/serverpod/issues/5002)
+  with reproduction steps, investigation, and supporting evidence.
+  Report [acknowledged](https://github.com/serverpod/serverpod/issues/5002#issuecomment-4805275713) by a Serverpod
+  maintainer as detailed.
+- [A minor refactoring to simplify implementation details](https://github.com/serverpod/serverpod/pull/3439/files) while
+  unit testing.
 
 ### *[Kobweb](https://github.com/varabyte/kobweb)*
 
@@ -133,6 +172,18 @@ Listed in the [Kobweb Guest Contributors](https://kobweb.varabyte.com/docs/commu
 
 [Using ProGuard to minimize Ktor server applications](https://github.com/ktorio/ktor-documentation/pull/481/files)
 
+### *[Epic Fight](https://epicfight-docs.readthedocs.io/)*
+
+Epic Fight is a major Minecraft Java game modification.
+
+- Submitted a detailed [design document](https://github.com/Antikythera-Studios/epicfight/issues/2116).
+- [Refactored input system](https://github.com/Antikythera-Studios/epicfight/pull/2122) for low coupling and
+  extensibility (e.g., to support controllers).
+  - Quickly adapted to Minecraft's obfuscated internal APIs within a few days, despite no prior experience.
+- [Initial Controller implementation after the refactoring](https://github.com/Antikythera-Studios/epicfight/pull/2133).
+- [Improved and stabilized the input system's public API](https://github.com/Antikythera-Studios/epicfight/issues/2194).
+- Became a core contributor for several months: [All Issue Reports and Pull Requests](https://github.com/Epic-Fight/epicfight/issues?q=author%3AEchoEllet)
+
 ### **[ATLauncher](https://github.com/ATLauncher/ATLauncher)**
 
 Quick play feature to join a Minecraft server, world, and realm on game launch ([#893](https://github.com/ATLauncher/ATLauncher/pull/893))
@@ -141,7 +192,7 @@ Quick play feature to join a Minecraft server, world, and realm on game launch (
 
 ## **Projects**
 
-### **[Flutter Quill](https://github.com/singerdmx/flutter-quill/)** · Rich Text Editor for Flutter · ⭐ [2.8k](https://github.com/singerdmx/flutter-quill) · 📦 [146K+ Downloads](https://pub.dev/packages/flutter_quill)
+### **[Flutter Quill](https://github.com/singerdmx/flutter-quill/)** · Rich Text Editor for Flutter · ⭐ [2.9k](https://github.com/singerdmx/flutter-quill) · 📦 [244K+ Downloads](https://pub.dev/packages/flutter_quill)
 
 A powerful WYSIWYG editor for Flutter, built with the same JSON document format as [QuillJS](https://quilljs.com/).  
 Supports rich text editing across mobile, desktop, and web platforms with customizable UI and platform integration capabilities.
@@ -156,8 +207,8 @@ instead of the open file dialog
 An open-source Minecraft Java launcher focused on instance isolation, seamless sharing, and mod management.
 
 Actively developed with a strong focus on maintainability, testability, and clean architecture,  
-backed by a [documented app structure](https://github.com/KraftLauncher/kraft-launcher/blob/main/docs/ARCHITECTURE.md) and  
-[a comprehensive test suite](https://github.com/KraftLauncher/kraft-launcher/tree/main/test/account/logic) for core features.
+backed by a [documented app structure](https://github.com/KraftLauncher/kraft-launcher/blob/main/docs/ARCHITECTURE.md)
+and a comprehensive test suite for core features.
 
 ### **[Quill Native Bridge](https://pub.dev/packages/quill_native_bridge)** | Flutter Plugin
 
@@ -168,29 +219,25 @@ Originally submitted to the Flutter ecosystem
 
 ## **Side Projects**
 
-### **[Gym App MVP](https://github.com/EchoEllet/gym-app-prototype)** | App for Gym Members
+### **[Gym App](https://github.com/EchoEllet/gym-app-prototype)** | App for Gym Members
 
 An MVP combining [Kobweb](https://github.com/varabyte/kobweb), [Ktor](https://ktor.io/),
-and [Flutter](https://flutter.dev/)
-
-[Download the Flutter admin app](https://drive.google.com/file/d/1SntZE2yHYe4HgFEWOmR1h-wwg33FATd4/view?usp=sharing)
-
-[View the app as a gym client](https://freshkernel.dev/login?userId=67fc361c40388d1ee512fdff&loginToken=SzkZ1VLkZwbvBIOcYuSEGNHwVGjV1VjPhYODIwETik8)
+and [Flutter](https://flutter.dev/).
 
 ### **[Kraft Sync](https://github.com/FreshKernel/kraft-sync/)** | Minecraft Script
 
 Automates mod/resource pack/server sync upon game launch.  
 Includes an admin utility app for management.  
 Written in [Kotlin/JVM](https://kotlinlang.org/docs/jvm-get-started.html) and optimized
-with [ProGuard](https://github.com/Guardsquare/proguard)
+with [ProGuard](https://github.com/Guardsquare/proguard).
 
 ### **[Alrayada Web](https://github.com/FreshKernel/alrayada-web)**
 
-A production website for a company using [Kobweb](https://github.com/varabyte/kobweb)
+A production website for a company using [Kobweb](https://github.com/varabyte/kobweb).
 
 ### **[Firebase App Check for Ktor Server](https://github.com/FreshKernel/ktor-server-firebase-app-check)**
 
-A [Ktor](https://ktor.io/) server plugin to support [Firebase App Check](https://firebase.google.com/docs/app-check)
+A [Ktor](https://ktor.io/) server plugin to support [Firebase App Check](https://firebase.google.com/docs/app-check).
 
 ---
 
