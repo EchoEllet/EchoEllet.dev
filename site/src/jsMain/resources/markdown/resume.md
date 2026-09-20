@@ -25,8 +25,15 @@ Dart, Kotlin, Java, JavaScript, TypeScript, and Swift.
 - Flutter.
 - Kotlin Multiplatform, Compose Multiplatform.
 - Android: Jetpack Compose, XML.
-- Backend: Ktor, Dart Shelf, Node.js, Express.js.
-- Web: Kobweb, React.
+- Web
+  - backend: Ktor, Dart Shelf, Node.js, Express.js.
+  - frontend: Kobweb, React. 
+
+### Software Architecture
+
+- Software API design and evolution with a focus on clarity, consistency, and backward compatibility.
+- Refactoring complex or confusing implementations while preserving existing behavior.
+- Designing modular, maintainable, and testable software with clear separation of concerns.
 
 ### Testing & Quality Assurance
 
@@ -36,17 +43,18 @@ Unit, integration, and end-to-end testing.
 
 Firebase: Authentication, Firestore, Cloud Functions, and Storage.
 
-### Software Architecture
-
-- Software API design and evolution with a focus on clarity, consistency, and backward compatibility.
-- Refactoring complex or confusing implementations while preserving existing behavior.
-- Designing modular, maintainable, and testable software with clear separation of concerns.
-
 ---
 
 ## Experience
 
 ### **[Flutter Quill](https://github.com/singerdmx/flutter-quill) Maintainer** | **Sep 2023 – Jul 2025**
+
+A rich text editor for Flutter using the same JSON document format as [QuillJS](https://quilljs.com/), supporting
+mobile, desktop, and web platforms.
+
+[**2.9k GitHub stars**](https://github.com/singerdmx/flutter-quill/) ·
+[**246K+ downloads**](https://pub.dev/packages/flutter_quill) ·
+[**Used in a 5-hour freeCodeCamp course**](https://youtu.be/F6P0hve2clE?t=13814)
 
 - Enhanced **image save functionality** with tests, ensuring robust and reliable
   behavior: [#2403](https://github.com/singerdmx/flutter-quill/pull/2403), [quill-native-bridge#9](https://github.com/FlutterQuill/quill-native-bridge/pull/9).
@@ -66,10 +74,9 @@ Firebase: Authentication, Firestore, Cloud Functions, and Storage.
 - Fixed bugs to improve stability and correctness (e.g., [#2522](https://github.com/singerdmx/flutter-quill/pull/2522), [#2279](https://github.com/singerdmx/flutter-quill/pull/2279)).
 - Refactored confusing logic with full backward compatibility and added tests to ensure reliability ([example #2525](https://github.com/singerdmx/flutter-quill/pull/2525)).
 - Filed bug issues with steps to reproduce (e.g., [Back Button issue](https://github.com/singerdmx/flutter-quill/issues/2527), [macOS missing keyboard actions](https://github.com/singerdmx/flutter-quill/issues/2288)).
-- Filed feature requests with details (e.g., [Spell Checking](https://github.com/singerdmx/flutter-quill/issues/2246), [Replacing a discounted dependency](https://github.com/singerdmx/flutter-quill/issues/2290)).
+- Filed feature requests with details (e.g., [Spell Checking](https://github.com/singerdmx/flutter-quill/issues/2246), [Replacing an unmaintained dependency](https://github.com/singerdmx/flutter-quill/issues/2290)).
 - Removed a dependency that might cause issues with YouTube's terms of service ([#2286](https://github.com/singerdmx/flutter-quill/pull/2286)).
-- Comprehensive
-  contributions: [All PRs](https://github.com/singerdmx/flutter-quill/pulls?q=is%3Apr+author%3AEchoEllet) | [Commits](https://github.com/singerdmx/flutter-quill/commits/master/?author=EchoEllet).
+- Contribution history: [All PRs](https://github.com/singerdmx/flutter-quill/pulls?q=is%3Apr+author%3AEchoEllet) | [Commits](https://github.com/singerdmx/flutter-quill/commits/master/?author=EchoEllet).
 
 ---
 
@@ -178,24 +185,24 @@ Epic Fight is a major Minecraft Java game modification with over
   - Quickly adapted to Minecraft's obfuscated internal APIs within a few days, despite no prior experience.
 - [Initial Controller implementation after the refactoring](https://github.com/Antikythera-Studios/epicfight/pull/2133).
 - [Improved and stabilized the input system's public API](https://github.com/Antikythera-Studios/epicfight/issues/2194).
-- Became a core contributor for several months: [All Issue Reports and Pull Requests](https://github.com/Epic-Fight/epicfight/issues?q=author%3AEchoEllet)
+- Became a core contributor for several months: [All Issue Reports and Pull Requests](https://github.com/Antikythera-Studios/epicfight/issues?q=author%3AEchoEllet) | [Commits](https://github.com/Antikythera-Studios/epicfight/commits/1.21.1/?author=EchoEllet)
 
 ### **[ATLauncher](https://github.com/ATLauncher/ATLauncher)**
 
-Quick play feature to join a Minecraft server, world, and realm on game launch ([#893](https://github.com/ATLauncher/ATLauncher/pull/893)).
+- Added the quick play feature to join a Minecraft server, world, and realm on game launch ([#893](https://github.com/ATLauncher/ATLauncher/pull/893)).
 
 ---
 
 ## Projects
 
-### **[Flutter Quill](https://github.com/singerdmx/flutter-quill/)**
+### **[Dart Packages](https://github.com/EchoEllet/dart-packages)** | [pub.dev publisher](https://pub.dev/publishers/echoellet.dev/packages)
 
-A powerful rich text editor for Flutter, built with the same JSON document format as [QuillJS](https://quilljs.com/).  
-Supports rich text editing across mobile, desktop, and web platforms with customizable UI and platform integration
-capabilities.
+A collection of published Dart and Flutter packages, including [`freedesktop_secret`](https://pub.dev/packages/freedesktop_secret),
+[`xdg_secret_portal_store`](https://pub.dev/packages/xdg_secret_portal_store),
+[`flutter_secure_storage_linux_secret_service`](https://pub.dev/packages/flutter_secure_storage_linux_secret_service),
+and [`system_accent_color`](https://pub.dev/packages/system_accent_color).
 
-⭐ [**2.9k GitHub stars**](https://github.com/singerdmx/flutter-quill/) ·
-📦 [**246K+ downloads**](https://pub.dev/packages/flutter_quill)
+Developed with a focus on clean APIs, interoperability, documentation, testing, and maintainability.
 
 ### **[Native macOS Flutter Image Picker](https://github.com/CompileKernel/native-image-picker-macos)**
 
@@ -205,7 +212,7 @@ instead of the open file dialog.
 Originally submitted to the Flutter ecosystem  
 ([pull request](https://github.com/flutter/packages/pull/8079)), later split into a community package.
 
-### **[Kraft Launcher](https://github.com/KraftLauncher/kraft-launcher)** | Minecraft Launcher
+### **[Kraft Launcher](https://github.com/KraftLauncher/kraft-launcher)**
 
 An open-source Minecraft Java launcher focused on instance isolation, seamless sharing, and mod management.
 
@@ -213,9 +220,9 @@ Developed with a strong focus on maintainability, testability, and clean archite
 backed by a [documented app structure](https://github.com/KraftLauncher/kraft-launcher/blob/main/docs/ARCHITECTURE.md)
 and a comprehensive test suite for core features.
 
-### **[Quill Native Bridge](https://pub.dev/packages/quill_native_bridge)** | Flutter Plugin
+### **[Quill Native Bridge](https://pub.dev/packages/quill_native_bridge)**
 
-A platform package for [`flutter_quill`](https://pub.dev/packages/flutter_quill) to access native APIs.
+A Flutter plugin for [`flutter_quill`](https://pub.dev/packages/flutter_quill) to access platform-specific APIs.
 
 ## Side Projects
 
