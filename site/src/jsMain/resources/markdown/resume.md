@@ -53,7 +53,7 @@ A rich text editor for Flutter using the same JSON document format as [QuillJS](
 mobile, desktop, and web platforms.
 
 [**2.9k GitHub stars**](https://github.com/singerdmx/flutter-quill/) ·
-[**246K+ downloads**](https://pub.dev/packages/flutter_quill) ·
+[**247K+ downloads**](https://pub.dev/packages/flutter_quill) ·
 [**Used in a 5-hour freeCodeCamp course**](https://youtu.be/F6P0hve2clE?t=13814)
 
 - Enhanced **image save functionality** with tests, ensuring robust and reliable
@@ -179,13 +179,32 @@ Listed in the [Kobweb Guest Contributors](https://kobweb.varabyte.com/docs/commu
 Epic Fight is a major Minecraft Java game modification with over
 [**29 million downloads**](https://www.curseforge.com/minecraft/mc-mods/epic-fight-mod).
 
-- Submitted a detailed [design document](https://github.com/Antikythera-Studios/epicfight/issues/2116).
-- [Refactored input system](https://github.com/Antikythera-Studios/epicfight/pull/2122) for low coupling and
-  extensibility (e.g., to support controllers).
+- Submitted a detailed [design document](https://github.com/Antikythera-Studios/epicfight/issues/2116) to refactor the
+  input system to support controllers, improve extension support, and simplify usage.
+- [Refactored input system](https://github.com/Antikythera-Studios/epicfight/pull/2122) while retaining full backward
+  compatibility.
   - Quickly adapted to Minecraft's obfuscated internal APIs within a few days, despite no prior experience.
-- [Initial Controller implementation after the refactoring](https://github.com/Antikythera-Studios/epicfight/pull/2133).
+- Implemented the initial [controller compatibility after the refactoring](https://github.com/Antikythera-Studios/epicfight/pull/2133).
 - [Improved and stabilized the input system's public API](https://github.com/Antikythera-Studios/epicfight/issues/2194).
-- Became a core contributor for several months: [All Issue Reports and Pull Requests](https://github.com/Antikythera-Studios/epicfight/issues?q=author%3AEchoEllet) | [Commits](https://github.com/Antikythera-Studios/epicfight/commits/1.21.1/?author=EchoEllet)
+- Migrated project structure to support multi-platforms
+  ([#2360](https://github.com/Antikythera-Studios/epicfight/pull/2360)).
+- Migrated from Gradle Groovy to Gradle KTS
+  ([#2136](https://github.com/Antikythera-Studios/epicfight/issues/2136), [#2235](https://github.com/Antikythera-Studios/epicfight/pull/2235))
+  and rewrote build scripts.
+- Became a core contributor for several
+  months: [All Issue Reports and Pull Requests](https://github.com/Antikythera-Studios/epicfight/issues?q=author%3AEchoEllet) | [Commits](https://github.com/Antikythera-Studios/epicfight/commits/1.21.1/?author=EchoEllet)
+- Developed [a Gradle plugin](https://github.com/EchoEllet/mc-safe-resources-gradle) for Epic Fight and its related
+  projects.
+- Contributed to the Epic Fight ecosystem:
+  - [Sword Soaring PRs](https://github.com/P1neapplell0/SwordSoaring-Reborn/pulls?q=is%3Apr+author%3AEchoEllet)
+  - [Epic Fight Invincible PRs](https://github.com/P1neapplell0/EpicFight-Invincible/pulls?q=is%3Apr+author%3AEchoEllet)
+  - [Weapons of Miracles](https://modrinth.com/mod/weapons-of-miracles). The source code is not publicly available, but
+    the JAR file can be downloaded, and "Ellet" can be found in its `META-INF/neoforge.mods.toml` file as a contributor.
+- Discovered and investigated [a high-memory usage issue](https://github.com/P1neapplell0/SwordSoaring-Reborn/issues/4)
+  with fellow developers.
+- Backported the controller modification to an older Minecraft version, and the legacy mod platform
+  ([GitHub repository](https://github.com/echoEllet/controlify)), which has
+  [142k+ downloads](https://www.curseforge.com/minecraft/mc-mods/controlify-forgified).
 
 ### **[ATLauncher](https://github.com/ATLauncher/ATLauncher)**
 
@@ -197,10 +216,14 @@ Epic Fight is a major Minecraft Java game modification with over
 
 ### **[Dart Packages](https://github.com/EchoEllet/dart-packages)** | [pub.dev publisher](https://pub.dev/publishers/echoellet.dev/packages)
 
-A collection of published Dart and Flutter packages, including [`freedesktop_secret`](https://pub.dev/packages/freedesktop_secret),
-[`xdg_secret_portal_store`](https://pub.dev/packages/xdg_secret_portal_store),
-[`flutter_secure_storage_linux_secret_service`](https://pub.dev/packages/flutter_secure_storage_linux_secret_service),
-and [`system_accent_color`](https://pub.dev/packages/system_accent_color).
+A collection of published Dart and Flutter packages, including:
+
+- [`freedesktop_secret`](https://pub.dev/packages/freedesktop_secret)
+- [`xdg_secret_portal_store`](https://pub.dev/packages/xdg_secret_portal_store)
+- [`flutter_secure_storage_linux_secret_service`](https://pub.dev/packages/flutter_secure_storage_linux_secret_service)
+- [`flutter_secure_storage_linux_portal`](https://pub.dev/packages/flutter_secure_storage_linux_portal)
+- [`system_accent_color`](https://pub.dev/packages/system_accent_color)
+- [`connectivity_plus_linux_portal`](https://pub.dev/packages/connectivity_plus_linux_portal)
 
 Developed with a focus on clean APIs, interoperability, documentation, testing, and maintainability.
 
@@ -222,25 +245,25 @@ and a comprehensive test suite for core features.
 
 ### **[Quill Native Bridge](https://pub.dev/packages/quill_native_bridge)**
 
-A Flutter plugin for [`flutter_quill`](https://pub.dev/packages/flutter_quill) to access platform-specific APIs.
+A Flutter plugin for [Flutter Quill](https://pub.dev/packages/flutter_quill) to access platform-specific APIs.
 
 ## Side Projects
 
-### **[Gym App](https://github.com/EchoEllet/gym-app-prototype)** | App for Gym Members
+### **[Gym App](https://github.com/EchoEllet/gym-app-prototype)**
 
-An MVP combining [Kobweb](https://github.com/varabyte/kobweb), [Ktor](https://ktor.io/),
+An application for gym members. Uses [Kobweb](https://github.com/varabyte/kobweb), [Ktor](https://ktor.io/),
 and [Flutter](https://flutter.dev/).
 
-### **[Kraft Sync](https://github.com/FreshKernel/kraft-sync/)** | Minecraft Script
+### **[Kraft Sync](https://github.com/FreshKernel/kraft-sync/)**
 
-Automates mod/resource pack/server sync upon game launch.  
+A JVM application/script that automates mod/resource pack/server sync upon game launch.  
 Includes an admin utility app for management.  
 Written in [Kotlin/JVM](https://kotlinlang.org/docs/jvm-get-started.html) and optimized
 with [ProGuard](https://github.com/Guardsquare/proguard).
 
 ### **[Alrayada Web](https://github.com/FreshKernel/alrayada-web)**
 
-A production website for a company using [Kobweb](https://github.com/varabyte/kobweb).
+A landing page for a medical company using [Kobweb](https://github.com/varabyte/kobweb).
 
 ### **[Firebase App Check for Ktor Server](https://github.com/FreshKernel/ktor-server-firebase-app-check)**
 
