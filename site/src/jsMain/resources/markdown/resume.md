@@ -274,4 +274,4 @@ A [Ktor](https://ktor.io/) server plugin to support [Firebase App Check](https:/
 ## Contact
 
 - **GitHub**: [github.com/EchoEllet](https://github.com/EchoEllet)
-- **Email**: [echo.ellet@gmail.com](mailto:echo.ellet@gmail.com)
+- **Email**: [ellet@echoellet.dev](mailto:ellet@echoellet.dev)
